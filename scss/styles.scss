@@ -576,7 +576,18 @@ footer {
     -------------------------------
 */
 
-#education {
+#volunteering {
+    padding: 50px 15px 20px 15px;
+    border-bottom: 1px solid $border;
+    text-align: center;
+
+    h2 {
+        color: $heading;
+        margin-bottom: 50px;
+    }
+}
+
+#education{
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid $border;
     text-align: center;
@@ -838,7 +849,6 @@ footer {
 // CUSTOM STYLES
 .about-me-big-text {
   font-size: 22px;
-  margin-bottom: 30px;
 }
 
 /*
