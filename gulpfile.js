@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var deploy = require('gulp-gh-pages');
 var plumber = require('gulp-plumber');
 const uglify = require('gulp-uglify');
 const sass = require('gulp-sass');
@@ -36,4 +37,9 @@ gulp.task('styles', function () {
 gulp.task('watch', function() {
     gulp.watch('./js/scripts.js', gulp.series('scripts'));
     gulp.watch('./scss/styles.scss', gulp.series('styles'));
+});
+
+gulp.task('deploy', function() {
+    return gulp.src("./dist/**/*")
+    .pipe(deploy())
 });
