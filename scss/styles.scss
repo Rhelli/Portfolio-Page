@@ -1,40 +1,4 @@
-/*!
-    Title: Dev Portfolio Template
-    Version: 1.2.2
-    Last Change: 03/25/2020
-    Author: Ryan Fitzgerald
-    Repo: https://github.com/RyanFitzgerald/devportfolio-template
-    Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues
-
-    Description: This file contains all the styles associated with the page
-    that don't come from third party libraries. This file gets compiled using
-    Gulp and send to the /css folder which is then loaded on the page.
-*/
-/*
-    File Contents:
-
-        1. Variables
-        2. Mixins
-        3. Global Styles
-        4. Lead Styles
-        5. About Styles
-        6. Experience Styles
-        7. Education Styles
-        8. Project Styles
-        9. Skills Styles
-        10. Contact Styles
-        11. Optional Section Styles
-        12. Media Queries
-*/
-
-/*
-    ------------------------
-    ----- 1. Variables -----
-    ------------------------
-*/
-
-// Define base and accent colors
-$base-color: #3498db;
+$base-color: #4DB6AC;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
@@ -350,7 +314,7 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    background: url(../images/header.jpg);
     background-size: cover;
     padding: 15px;
     overflow: hidden;
@@ -512,6 +476,9 @@ footer {
     padding: 15px;
     border-radius: 3px;
     text-align: left;
+    -webkit-box-shadow: 0px 2px 4px -1px rgba(201,201,201,1);
+    -moz-box-shadow: 0px 2px 4px -1px rgba(201,201,201,1);
+    box-shadow: 0px 2px 4px -1px rgba(201,201,201,1);
 
     h3 {
         font-size: 1.5em;
@@ -576,18 +543,7 @@ footer {
     -------------------------------
 */
 
-#volunteering {
-    padding: 50px 15px 20px 15px;
-    border-bottom: 1px solid $border;
-    text-align: center;
-
-    h2 {
-        color: $heading;
-        margin-bottom: 50px;
-    }
-}
-
-#education{
+#education {
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid $border;
     text-align: center;
@@ -604,6 +560,9 @@ footer {
     padding: 15px;
     border: 1px solid $border;
     text-align: left;
+    -webkit-box-shadow: 0px 2px 4px -1px rgba(201,201,201,1);
+    -moz-box-shadow: 0px 2px 4px -1px rgba(201,201,201,1);
+    box-shadow: 0px 2px 4px -1px rgba(201,201,201,1);
 
     h3 {
         font-weight: 500;
@@ -670,6 +629,27 @@ footer {
     top: 50%;
     transform: translateY(-50%);
     margin-left: 300px;
+    padding: 15px;
+
+    h3 {
+        font-size: 1.5em;
+        font-weight: 300;
+        color: $heading;
+        margin: 0 0 15px 0;
+    }
+
+    p {
+        color: $text;
+        margin: 0 0 15px 0;
+        font-size: 0.9em;
+    }
+}
+
+.project-info-1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 500px;
     padding: 15px;
 
     h3 {
