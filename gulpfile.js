@@ -5,6 +5,7 @@ const sass = require('gulp-sass');
 const wait = require('gulp-wait');
 const babel = require('gulp-babel');;
 const rename = require('gulp-rename');
+var deploy      = require('gulp-gh-pages');
 
 gulp.task('scripts', function() {
     return gulp.src('./js/scripts.js')
@@ -31,6 +32,11 @@ gulp.task('styles', function () {
         .pipe(wait(250))
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(gulp.dest('./css'));
+});
+
+gulp.task('deploy', function () {
+    return gulp.src("./dist/**/*")
+      .pipe(deploy())
 });
 
 gulp.task('watch', function() {
